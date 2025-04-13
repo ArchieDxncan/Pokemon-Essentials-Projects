@@ -1,0 +1,1 @@
+python cable_club_pokemon_processor.py pokemon.txt --mode propagate

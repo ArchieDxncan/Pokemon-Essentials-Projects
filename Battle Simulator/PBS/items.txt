@@ -13,6 +13,7 @@ Description = An item that prevents weak wild Pokémon from appearing for 100 st
 Name = Super Repel
 NamePlural = Super Repels
 Pocket = 1
+
 Price = 700
 FieldUse = Direct
 Flags = Repel,Fling_30
