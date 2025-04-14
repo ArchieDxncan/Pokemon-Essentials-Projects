@@ -282,27 +282,82 @@ def import_pokemon_from_storage(filename)
     # Set Poké Ball
     ball_str = data[:caught_ball] || data["caught_ball"]
     if ball_str
-      ball_name = ball_str.to_s.gsub(/cobblemon:/, '')
-      ball_sym = ball_name.gsub(/[^a-zA-Z0-9_]/, '_').to_sym
+      # Normalize the ball string - handle both uppercase and lowercase variants
+      # Remove prefix like "cobblemon:" regardless of case
+      ball_name = ball_str.to_s.downcase.gsub(/cobblemon:/, '')
+      
+      # Convert formats like "POKE_BALL" or "poke_ball" to a clean format
+      # First replace underscores and hyphens with spaces
+      ball_name = ball_name.gsub(/[_-]/, ' ')
+      
+      # Then capitalize each word and remove spaces to match GameData format
+      ball_name = ball_name.split.map(&:capitalize).join('')
+      
+      # Add "Ball" suffix if not present
+      ball_name += "Ball" unless ball_name.end_with?("Ball")
+      
+      # Convert to symbol
+      ball_sym = ball_name.to_sym
+      
       if GameData::Item.exists?(ball_sym)
         pkmn.poke_ball = ball_sym 
       else
         # Try to find a matching ball item
-        cleaned_name = ball_name.gsub(/[^a-zA-Z0-9]/, '')
-        possible_balls = [:POKEBALL, :GREATBALL, :ULTRABALL, :MASTERBALL, 
-                          :SAFARIBALL, :NETBALL, :DIVEBALL, :NESTBALL, :REPEATBALL, 
-                          :TIMERBALL, :LUXURYBALL, :PREMIERBALL, :DUSKBALL, 
-                          :HEALBALL, :QUICKBALL, :CHERISHBALL, :FASTBALL, 
-                          :LEVELBALL, :LUREBALL, :HEAVYBALL, :LOVEBALL, 
-                          :FRIENDBALL, :MOONBALL, :SPORTBALL, :DREAMBALL]
-        possible_balls.each do |ball|
-          if ball.to_s.upcase.include?(cleaned_name.upcase)
-            pkmn.poke_ball = ball
-            break
+        # Define a mapping of common ball names to their symbolic counterparts
+        ball_mapping = {
+          "pokeball" => :POKEBALL,
+          "greatball" => :GREATBALL,
+          "ultraball" => :ULTRABALL,
+          "masterball" => :MASTERBALL,
+          "safariball" => :SAFARIBALL,
+          "netball" => :NETBALL,
+          "diveball" => :DIVEBALL,
+          "nestball" => :NESTBALL,
+          "repeatball" => :REPEATBALL,
+          "timerball" => :TIMERBALL,
+          "luxuryball" => :LUXURYBALL,
+          "premierball" => :PREMIERBALL,
+          "duskball" => :DUSKBALL,
+          "healball" => :HEALBALL,
+          "quickball" => :QUICKBALL,
+          "cherishball" => :CHERISHBALL,
+          "fastball" => :FASTBALL,
+          "levelball" => :LEVELBALL,
+          "lureball" => :LUREBALL,
+          "heavyball" => :HEAVYBALL,
+          "loveball" => :LOVEBALL,
+          "friendball" => :FRIENDBALL,
+          "moonball" => :MOONBALL,
+          "sportball" => :SPORTBALL,
+          "dreamball" => :DREAMBALL
+        }
+        
+        # Clean the name for lookup in our mapping
+        cleaned_name = ball_name.gsub(/ball$/i, '').downcase
+        
+        if ball_mapping.key?(cleaned_name + "ball")
+          pkmn.poke_ball = ball_mapping[cleaned_name + "ball"]
+        else
+          # Try partial matches if exact match fails
+          possible_balls = [:POKEBALL, :GREATBALL, :ULTRABALL, :MASTERBALL, 
+                            :SAFARIBALL, :NETBALL, :DIVEBALL, :NESTBALL, :REPEATBALL, 
+                            :TIMERBALL, :LUXURYBALL, :PREMIERBALL, :DUSKBALL, 
+                            :HEALBALL, :QUICKBALL, :CHERISHBALL, :FASTBALL, 
+                            :LEVELBALL, :LUREBALL, :HEAVYBALL, :LOVEBALL, 
+                            :FRIENDBALL, :MOONBALL, :SPORTBALL, :DREAMBALL]
+          
+          matched = false
+          possible_balls.each do |ball|
+            if ball.to_s.downcase.include?(cleaned_name.downcase)
+              pkmn.poke_ball = ball
+              matched = true
+              break
+            end
           end
+          
+          # Default to regular Poké Ball if no match found
+          pkmn.poke_ball = :POKEBALL if !matched
         end
-        # Default to regular Poké Ball if no match found
-        pkmn.poke_ball = :POKEBALL if !pkmn.poke_ball
       end
     end
     

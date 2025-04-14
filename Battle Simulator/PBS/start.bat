@@ -1,1 +1,1 @@
-python cable_club_pokemon_processor.py pokemon.txt --mode propagate
+python cable_club_pokemon_processor.py --mode simple -o server_pokemon.txt -v pokemon.txt
