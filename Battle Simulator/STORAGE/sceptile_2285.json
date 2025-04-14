@@ -1,0 +1,72 @@
+{
+    "species": "sceptile",
+    "nickname": "420",
+    "level": 63,
+    "ability": "Overgrow",
+    "moves": [
+        "dual-chop",
+        "x-scissor",
+        "false-swipe",
+        "leaf-blade"
+    ],
+    "ivs": {
+        "attack": 8,
+        "defence": 15,
+        "hp": 31,
+        "special_attack": 24,
+        "special_defence": 7,
+        "speed": 28
+    },
+    "evs": {
+        "attack": 66,
+        "defence": 14,
+        "hp": 9,
+        "special_attack": 26,
+        "special_defence": 7,
+        "speed": 42
+    },
+    "nature": "Adamant",
+    "original_trainer": "MiniDuncan",
+    "health": 181,
+    "experience": 249927,
+    "shiny": 0,
+    "caught_ball": "cobblemon:ultra_ball",
+    "gender": "MALE",
+    "friendship": 138,
+    "healing_timer": -1,
+    "gmax_factor": 0,
+    "gmax_level": 0,
+    "tera_type": "cobblemon:ground",
+    "form_id": "normal",
+    "uuid": [
+        -826924253,
+        -44153905,
+        -1335992689,
+        -601775785
+    ],
+    "scale_modifier": 1.0,
+    "met_date": "2025-04-14",
+    "met_level": 63,
+    "met_location": "a lovely place",
+    "origin_game": "Cobblemon",
+    "language": 2,
+    "tid": null,
+    "pid": null,
+    "sid": null,
+    "home_tracker": 0,
+    "encryption_constant": 0,
+    "height": 0,
+    "weight": 0,
+    "scale": 0,
+    "ribbons": [],
+    "relearn_flags": [],
+    "fateful_encounter": false,
+    "memories": {
+        "memory_type": 0,
+        "memory_intensity": 0,
+        "memory_feeling": 0,
+        "memory_variable": 0
+    },
+    "box_number": 6,
+    "slot_number": 3
+}

@@ -1,0 +1,72 @@
+{
+    "species": "munchlax",
+    "nickname": "Munchlax",
+    "level": 38,
+    "ability": "Thick-fat",
+    "moves": [
+        "amnesia",
+        "fling",
+        "body-slam",
+        "screech"
+    ],
+    "ivs": {
+        "attack": 4,
+        "defence": 16,
+        "hp": 19,
+        "special_attack": 13,
+        "special_defence": 7,
+        "speed": 8
+    },
+    "evs": {
+        "attack": 0,
+        "defence": 0,
+        "hp": 0,
+        "special_attack": 0,
+        "special_defence": 0,
+        "speed": 0
+    },
+    "nature": "Timid",
+    "original_trainer": "MiniDuncan",
+    "health": 61,
+    "experience": 68590,
+    "shiny": 0,
+    "caught_ball": "cobblemon:level_ball",
+    "gender": "MALE",
+    "friendship": 50,
+    "healing_timer": 60,
+    "gmax_factor": 0,
+    "gmax_level": 0,
+    "tera_type": "cobblemon:normal",
+    "form_id": "normal",
+    "uuid": [
+        1405963387,
+        506809049,
+        -1354198057,
+        -775554128
+    ],
+    "scale_modifier": 1.0,
+    "met_date": "2025-04-14",
+    "met_level": 38,
+    "met_location": "a lovely place",
+    "origin_game": "Cobblemon",
+    "language": 2,
+    "tid": null,
+    "pid": null,
+    "sid": null,
+    "home_tracker": 0,
+    "encryption_constant": 0,
+    "height": 0,
+    "weight": 0,
+    "scale": 0,
+    "ribbons": [],
+    "relearn_flags": [],
+    "fateful_encounter": false,
+    "memories": {
+        "memory_type": 0,
+        "memory_intensity": 0,
+        "memory_feeling": 0,
+        "memory_variable": 0
+    },
+    "box_number": 4,
+    "slot_number": 22
+}

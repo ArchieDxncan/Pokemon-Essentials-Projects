@@ -1,0 +1,72 @@
+{
+    "species": "dachsbun",
+    "nickname": "Dachsbun",
+    "level": 44,
+    "ability": "Well-baked-body",
+    "moves": [
+        "charm",
+        "double-edge",
+        "roar",
+        "baton-pass"
+    ],
+    "ivs": {
+        "attack": 31,
+        "defence": 22,
+        "hp": 18,
+        "special_attack": 28,
+        "special_defence": 31,
+        "speed": 31
+    },
+    "evs": {
+        "attack": 0,
+        "defence": 0,
+        "hp": 0,
+        "special_attack": 0,
+        "special_defence": 0,
+        "speed": 0
+    },
+    "nature": "Brave",
+    "original_trainer": "MiniDuncan",
+    "health": 33,
+    "experience": 77440,
+    "shiny": 0,
+    "caught_ball": "cobblemon:ultra_ball",
+    "gender": "FEMALE",
+    "friendship": 50,
+    "healing_timer": 60,
+    "gmax_factor": 0,
+    "gmax_level": 0,
+    "tera_type": "cobblemon:fairy",
+    "form_id": "normal",
+    "uuid": [
+        -997906431,
+        781600990,
+        -1981818243,
+        993290894
+    ],
+    "scale_modifier": 1.0,
+    "met_date": "2025-04-14",
+    "met_level": 44,
+    "met_location": "a lovely place",
+    "origin_game": "Cobblemon",
+    "language": 2,
+    "tid": null,
+    "pid": null,
+    "sid": null,
+    "home_tracker": 0,
+    "encryption_constant": 0,
+    "height": 0,
+    "weight": 0,
+    "scale": 0,
+    "ribbons": [],
+    "relearn_flags": [],
+    "fateful_encounter": false,
+    "memories": {
+        "memory_type": 0,
+        "memory_intensity": 0,
+        "memory_feeling": 0,
+        "memory_variable": 0
+    },
+    "box_number": 2,
+    "slot_number": 24
+}

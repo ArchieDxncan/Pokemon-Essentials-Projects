@@ -1,5 +1,5 @@
 module CableClub
-  HOST = "127.0.0.1"
+  HOST = "31.127.25.166"
   PORT = 9999
   
   FOLDER_FOR_BATTLE_PRESETS = "OnlinePresets"

@@ -1,0 +1,72 @@
+{
+    "species": "sigilyph",
+    "nickname": "Sigilyph",
+    "level": 43,
+    "ability": "Wonder-skin",
+    "moves": [
+        "psychic",
+        "air-slash",
+        "cosmic-power",
+        "whirlwind"
+    ],
+    "ivs": {
+        "attack": 4,
+        "defence": 21,
+        "hp": 11,
+        "special_attack": 5,
+        "special_defence": 19,
+        "speed": 15
+    },
+    "evs": {
+        "attack": 0,
+        "defence": 0,
+        "hp": 0,
+        "special_attack": 0,
+        "special_defence": 0,
+        "speed": 3
+    },
+    "nature": "Serious",
+    "original_trainer": "MiniDuncan",
+    "health": 55,
+    "experience": 79507,
+    "shiny": 0,
+    "caught_ball": "cobblemon:ancient_feather_ball",
+    "gender": "FEMALE",
+    "friendship": 50,
+    "healing_timer": 60,
+    "gmax_factor": 0,
+    "gmax_level": 0,
+    "tera_type": "cobblemon:psychic",
+    "form_id": "normal",
+    "uuid": [
+        204085716,
+        -593015258,
+        -1895781127,
+        767950066
+    ],
+    "scale_modifier": 1.0,
+    "met_date": "2025-04-14",
+    "met_level": 43,
+    "met_location": "a lovely place",
+    "origin_game": "Cobblemon",
+    "language": 2,
+    "tid": null,
+    "pid": null,
+    "sid": null,
+    "home_tracker": 0,
+    "encryption_constant": 0,
+    "height": 0,
+    "weight": 0,
+    "scale": 0,
+    "ribbons": [],
+    "relearn_flags": [],
+    "fateful_encounter": false,
+    "memories": {
+        "memory_type": 0,
+        "memory_intensity": 0,
+        "memory_feeling": 0,
+        "memory_variable": 0
+    },
+    "box_number": 3,
+    "slot_number": 29
+}

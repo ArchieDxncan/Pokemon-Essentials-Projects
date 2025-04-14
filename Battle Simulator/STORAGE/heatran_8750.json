@@ -1,0 +1,72 @@
+{
+    "species": "heatran",
+    "nickname": "Heatran",
+    "level": 66,
+    "ability": "Flash-fire",
+    "moves": [
+        "stone-edge",
+        "heat-wave",
+        "earth-power",
+        "metal-sound"
+    ],
+    "ivs": {
+        "attack": 16,
+        "defence": 5,
+        "hp": 29,
+        "special_attack": 1,
+        "special_defence": 31,
+        "speed": 29
+    },
+    "evs": {
+        "attack": 0,
+        "defence": 0,
+        "hp": 0,
+        "special_attack": 0,
+        "special_defence": 0,
+        "speed": 0
+    },
+    "nature": "Docile",
+    "original_trainer": "MiniDuncan",
+    "health": 215,
+    "experience": 359370,
+    "shiny": 0,
+    "caught_ball": "cobblemon:master_ball",
+    "gender": "MALE",
+    "friendship": 50,
+    "healing_timer": 60,
+    "gmax_factor": 0,
+    "gmax_level": 0,
+    "tera_type": "cobblemon:fire",
+    "form_id": "normal",
+    "uuid": [
+        109404635,
+        -1430171852,
+        -1682210609,
+        -125508962
+    ],
+    "scale_modifier": 1.0,
+    "met_date": "2025-04-14",
+    "met_level": 66,
+    "met_location": "a lovely place",
+    "origin_game": "Cobblemon",
+    "language": 2,
+    "tid": null,
+    "pid": null,
+    "sid": null,
+    "home_tracker": 0,
+    "encryption_constant": 0,
+    "height": 0,
+    "weight": 0,
+    "scale": 0,
+    "ribbons": [],
+    "relearn_flags": [],
+    "fateful_encounter": false,
+    "memories": {
+        "memory_type": 0,
+        "memory_intensity": 0,
+        "memory_feeling": 0,
+        "memory_variable": 0
+    },
+    "box_number": 1,
+    "slot_number": 14
+}

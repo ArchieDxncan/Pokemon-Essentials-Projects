@@ -1,0 +1,69 @@
+{
+    "species": "unown",
+    "nickname": "Unown",
+    "level": 53,
+    "ability": "Levitate",
+    "moves": [
+        "hidden-power"
+    ],
+    "ivs": {
+        "attack": 30,
+        "defence": 4,
+        "hp": 29,
+        "special_attack": 14,
+        "special_defence": 26,
+        "speed": 21
+    },
+    "evs": {
+        "attack": 0,
+        "defence": 0,
+        "hp": 0,
+        "special_attack": 0,
+        "special_defence": 0,
+        "speed": 0
+    },
+    "nature": "Naive",
+    "original_trainer": "MiniDuncan",
+    "health": 129,
+    "experience": 148877,
+    "shiny": 0,
+    "caught_ball": "cobblemon:quick_ball",
+    "gender": "GENDERLESS",
+    "friendship": 35,
+    "healing_timer": 60,
+    "gmax_factor": 0,
+    "gmax_level": 0,
+    "tera_type": "cobblemon:psychic",
+    "form_id": "normal",
+    "uuid": [
+        -938077703,
+        -1119402101,
+        -1573944909,
+        848627142
+    ],
+    "scale_modifier": 1.0,
+    "met_date": "2025-04-14",
+    "met_level": 53,
+    "met_location": "a lovely place",
+    "origin_game": "Cobblemon",
+    "language": 2,
+    "tid": null,
+    "pid": null,
+    "sid": null,
+    "home_tracker": 0,
+    "encryption_constant": 0,
+    "height": 0,
+    "weight": 0,
+    "scale": 0,
+    "ribbons": [],
+    "relearn_flags": [],
+    "fateful_encounter": false,
+    "memories": {
+        "memory_type": 0,
+        "memory_intensity": 0,
+        "memory_feeling": 0,
+        "memory_variable": 0
+    },
+    "box_number": 5,
+    "slot_number": 1
+}

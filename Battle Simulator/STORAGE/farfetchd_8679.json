@@ -1,0 +1,72 @@
+{
+    "species": "farfetchd",
+    "nickname": "Farfetchd",
+    "level": 37,
+    "ability": "Steadfast",
+    "moves": [
+        "defog",
+        "knock-off",
+        "detect",
+        "brutal-swing"
+    ],
+    "ivs": {
+        "attack": 16,
+        "defence": 6,
+        "hp": 27,
+        "special_attack": 27,
+        "special_defence": 10,
+        "speed": 23
+    },
+    "evs": {
+        "attack": 0,
+        "defence": 0,
+        "hp": 0,
+        "special_attack": 0,
+        "special_defence": 0,
+        "speed": 0
+    },
+    "nature": "Docile",
+    "original_trainer": "MiniDuncan",
+    "health": 95,
+    "experience": 50653,
+    "shiny": 0,
+    "caught_ball": "cobblemon:ultra_ball",
+    "gender": "FEMALE",
+    "friendship": 36,
+    "healing_timer": -1,
+    "gmax_factor": 0,
+    "gmax_level": 0,
+    "tera_type": "cobblemon:fighting",
+    "form_id": "galar",
+    "uuid": [
+        -1109772179,
+        383798955,
+        -1724343341,
+        1903335921
+    ],
+    "scale_modifier": 1.0,
+    "met_date": "2025-04-14",
+    "met_level": 37,
+    "met_location": "a lovely place",
+    "origin_game": "Cobblemon",
+    "language": 2,
+    "tid": null,
+    "pid": null,
+    "sid": null,
+    "home_tracker": 0,
+    "encryption_constant": 0,
+    "height": 0,
+    "weight": 0,
+    "scale": 0,
+    "ribbons": [],
+    "relearn_flags": [],
+    "fateful_encounter": false,
+    "memories": {
+        "memory_type": 0,
+        "memory_intensity": 0,
+        "memory_feeling": 0,
+        "memory_variable": 0
+    },
+    "box_number": 2,
+    "slot_number": 1
+}

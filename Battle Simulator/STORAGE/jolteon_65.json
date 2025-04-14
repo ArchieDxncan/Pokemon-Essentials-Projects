@@ -1,0 +1,72 @@
+{
+    "species": "jolteon",
+    "nickname": "Jolteon",
+    "level": 57,
+    "ability": "Volt-absorb",
+    "moves": [
+        "thunder-wave",
+        "thunder",
+        "sand-attack",
+        "double-edge"
+    ],
+    "ivs": {
+        "attack": 23,
+        "defence": 0,
+        "hp": 17,
+        "special_attack": 22,
+        "special_defence": 0,
+        "speed": 17
+    },
+    "evs": {
+        "attack": 42,
+        "defence": 10,
+        "hp": 6,
+        "special_attack": 9,
+        "special_defence": 5,
+        "speed": 29
+    },
+    "nature": "Jolly",
+    "original_trainer": "MiniDuncan",
+    "health": 151,
+    "experience": 186394,
+    "shiny": 0,
+    "caught_ball": "cobblemon:great_ball",
+    "gender": "MALE",
+    "friendship": 94,
+    "healing_timer": -1,
+    "gmax_factor": 0,
+    "gmax_level": 0,
+    "tera_type": "cobblemon:normal",
+    "form_id": "normal",
+    "uuid": [
+        -703676266,
+        112806535,
+        -1420076216,
+        -670326372
+    ],
+    "scale_modifier": 1.0,
+    "met_date": "2025-04-14",
+    "met_level": 57,
+    "met_location": "a lovely place",
+    "origin_game": "Cobblemon",
+    "language": 2,
+    "tid": null,
+    "pid": null,
+    "sid": null,
+    "home_tracker": 0,
+    "encryption_constant": 0,
+    "height": 0,
+    "weight": 0,
+    "scale": 0,
+    "ribbons": [],
+    "relearn_flags": [],
+    "fateful_encounter": false,
+    "memories": {
+        "memory_type": 0,
+        "memory_intensity": 0,
+        "memory_feeling": 0,
+        "memory_variable": 0
+    },
+    "box_number": 4,
+    "slot_number": 16
+}

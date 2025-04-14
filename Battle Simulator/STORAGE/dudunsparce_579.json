@@ -1,0 +1,72 @@
+{
+    "species": "dudunsparce",
+    "nickname": "Dudunsparce",
+    "level": 15,
+    "ability": "Serene-grace",
+    "moves": [
+        "glare",
+        "rollout",
+        "mud-slap",
+        "flail"
+    ],
+    "ivs": {
+        "attack": 7,
+        "defence": 4,
+        "hp": 24,
+        "special_attack": 27,
+        "special_defence": 14,
+        "speed": 15
+    },
+    "evs": {
+        "attack": 0,
+        "defence": 0,
+        "hp": 0,
+        "special_attack": 0,
+        "special_defence": 0,
+        "speed": 0
+    },
+    "nature": "Hasty",
+    "original_trainer": "MiniDuncan",
+    "health": 66,
+    "experience": 3375,
+    "shiny": 0,
+    "caught_ball": "cobblemon:quick_ball",
+    "gender": "FEMALE",
+    "friendship": 50,
+    "healing_timer": 60,
+    "gmax_factor": 0,
+    "gmax_level": 0,
+    "tera_type": "cobblemon:normal",
+    "form_id": "normal",
+    "uuid": [
+        -1460147837,
+        -1128577514,
+        -2076499456,
+        -113247786
+    ],
+    "scale_modifier": 1.0,
+    "met_date": "2025-02-24",
+    "met_level": 15,
+    "met_location": "minecraft:windswept_gravelly_hills",
+    "origin_game": "Cobblemon",
+    "language": 2,
+    "tid": null,
+    "pid": null,
+    "sid": null,
+    "home_tracker": 0,
+    "encryption_constant": 0,
+    "height": 0,
+    "weight": 0,
+    "scale": 0,
+    "ribbons": [],
+    "relearn_flags": [],
+    "fateful_encounter": false,
+    "memories": {
+        "memory_type": 0,
+        "memory_intensity": 0,
+        "memory_feeling": 0,
+        "memory_variable": 0
+    },
+    "box_number": 6,
+    "slot_number": 7
+}

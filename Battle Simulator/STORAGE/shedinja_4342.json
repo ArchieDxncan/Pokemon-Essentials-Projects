@@ -1,0 +1,72 @@
+{
+    "species": "shedinja",
+    "nickname": "Shedinja",
+    "level": 24,
+    "ability": "Wonder-guard",
+    "moves": [
+        "absorb",
+        "confuse-ray",
+        "metal-claw",
+        "shadow-claw"
+    ],
+    "ivs": {
+        "attack": 3,
+        "defence": 9,
+        "hp": 20,
+        "special_attack": 19,
+        "special_defence": 17,
+        "speed": 13
+    },
+    "evs": {
+        "attack": 0,
+        "defence": 0,
+        "hp": 0,
+        "special_attack": 0,
+        "special_defence": 0,
+        "speed": 0
+    },
+    "nature": "Quirky",
+    "original_trainer": "MiniDuncan",
+    "health": 1,
+    "experience": 21012,
+    "shiny": 0,
+    "caught_ball": "cobblemon:ultra_ball",
+    "gender": "GENDERLESS",
+    "friendship": 50,
+    "healing_timer": 60,
+    "gmax_factor": 0,
+    "gmax_level": 0,
+    "tera_type": "cobblemon:bug",
+    "form_id": "normal",
+    "uuid": [
+        -2014890945,
+        -1267905845,
+        -1447249152,
+        1568360196
+    ],
+    "scale_modifier": 1.0,
+    "met_date": "2025-04-14",
+    "met_level": 24,
+    "met_location": "a lovely place",
+    "origin_game": "Cobblemon",
+    "language": 2,
+    "tid": null,
+    "pid": null,
+    "sid": null,
+    "home_tracker": 0,
+    "encryption_constant": 0,
+    "height": 0,
+    "weight": 0,
+    "scale": 0,
+    "ribbons": [],
+    "relearn_flags": [],
+    "fateful_encounter": false,
+    "memories": {
+        "memory_type": 0,
+        "memory_intensity": 0,
+        "memory_feeling": 0,
+        "memory_variable": 0
+    },
+    "box_number": 2,
+    "slot_number": 27
+}

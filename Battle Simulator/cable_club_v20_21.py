@@ -33,9 +33,9 @@ SKETCH_MOVE_IDS = ["SKETCH"]
 # Essentials Deluxe Plugins
 ESSENTIALS_DELUXE_INSTALLED = False # Specifically Essentials Deluxe, not DBK
 MUI_MEMENTOS_INSTALLED = False
-ZUD_DYNAMAX_INSTALLED = False # ZUD Mechanics / [DBK] Dynamax
+ZUD_DYNAMAX_INSTALLED = True # ZUD Mechanics / [DBK] Dynamax
 PLA_INSTALLED = False # PLA Battle Styles
-TERA_INSTALLED = False # Terastal Phenomenon / [DBK] Terastallization
+TERA_INSTALLED = True # Terastal Phenomenon / [DBK] Terastallization
 FOCUS_INSTALLED = False # Focus Meter System
 
 class Server:

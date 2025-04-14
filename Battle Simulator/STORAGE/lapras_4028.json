@@ -1,0 +1,72 @@
+{
+    "species": "lapras",
+    "nickname": "Lapras",
+    "level": 54,
+    "ability": "Shell-armor",
+    "moves": [
+        "water-pulse",
+        "ice-beam",
+        "body-slam",
+        "brine"
+    ],
+    "ivs": {
+        "attack": 24,
+        "defence": 12,
+        "hp": 26,
+        "special_attack": 21,
+        "special_defence": 5,
+        "speed": 10
+    },
+    "evs": {
+        "attack": 5,
+        "defence": 3,
+        "hp": 2,
+        "special_attack": 1,
+        "special_defence": 0,
+        "speed": 3
+    },
+    "nature": "Mild",
+    "original_trainer": "OliverJohnWyatt",
+    "health": 218,
+    "experience": 207833,
+    "shiny": 0,
+    "caught_ball": "cobblemon:ultra_ball",
+    "gender": "MALE",
+    "friendship": 50,
+    "healing_timer": 60,
+    "gmax_factor": 0,
+    "gmax_level": 0,
+    "tera_type": "cobblemon:water",
+    "form_id": "normal",
+    "uuid": [
+        -981936779,
+        542785821,
+        -1763228920,
+        1771938285
+    ],
+    "scale_modifier": 1.0,
+    "met_date": "2025-04-14",
+    "met_level": 54,
+    "met_location": "a lovely place",
+    "origin_game": "Cobblemon",
+    "language": 2,
+    "tid": null,
+    "pid": null,
+    "sid": null,
+    "home_tracker": 0,
+    "encryption_constant": 0,
+    "height": 0,
+    "weight": 0,
+    "scale": 0,
+    "ribbons": [],
+    "relearn_flags": [],
+    "fateful_encounter": false,
+    "memories": {
+        "memory_type": 0,
+        "memory_intensity": 0,
+        "memory_feeling": 0,
+        "memory_variable": 0
+    },
+    "box_number": 6,
+    "slot_number": 8
+}

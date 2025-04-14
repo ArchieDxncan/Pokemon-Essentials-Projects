@@ -1,0 +1,72 @@
+{
+    "species": "farigiraf",
+    "nickname": "Farigiraf",
+    "level": 37,
+    "ability": "Cud-chew",
+    "moves": [
+        "crunch",
+        "twin-beam",
+        "double-hit",
+        "agility"
+    ],
+    "ivs": {
+        "attack": 2,
+        "defence": 15,
+        "hp": 20,
+        "special_attack": 5,
+        "special_defence": 11,
+        "speed": 23
+    },
+    "evs": {
+        "attack": 2,
+        "defence": 0,
+        "hp": 0,
+        "special_attack": 0,
+        "special_defence": 0,
+        "speed": 1
+    },
+    "nature": "Modest",
+    "original_trainer": "MiniDuncan",
+    "health": 143,
+    "experience": 53282,
+    "shiny": 0,
+    "caught_ball": "cobblemon:great_ball",
+    "gender": "FEMALE",
+    "friendship": 53,
+    "healing_timer": -1,
+    "gmax_factor": 0,
+    "gmax_level": 0,
+    "tera_type": "cobblemon:normal",
+    "form_id": "normal",
+    "uuid": [
+        -1489084935,
+        1192117140,
+        -1686007366,
+        -783162830
+    ],
+    "scale_modifier": 1.0,
+    "met_date": "2025-04-14",
+    "met_level": 37,
+    "met_location": "a lovely place",
+    "origin_game": "Cobblemon",
+    "language": 2,
+    "tid": null,
+    "pid": null,
+    "sid": null,
+    "home_tracker": 0,
+    "encryption_constant": 0,
+    "height": 0,
+    "weight": 0,
+    "scale": 0,
+    "ribbons": [],
+    "relearn_flags": [],
+    "fateful_encounter": false,
+    "memories": {
+        "memory_type": 0,
+        "memory_intensity": 0,
+        "memory_feeling": 0,
+        "memory_variable": 0
+    },
+    "box_number": 2,
+    "slot_number": 2
+}

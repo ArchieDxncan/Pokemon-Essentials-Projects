@@ -1,0 +1,72 @@
+{
+    "species": "guzzlord",
+    "nickname": "Rizzlord",
+    "level": 70,
+    "ability": "Beast-boost",
+    "moves": [
+        "giga-impact",
+        "wring-out",
+        "hammer-arm",
+        "belch"
+    ],
+    "ivs": {
+        "attack": 19,
+        "defence": 31,
+        "hp": 25,
+        "special_attack": 20,
+        "special_defence": 16,
+        "speed": 7
+    },
+    "evs": {
+        "attack": 2,
+        "defence": 0,
+        "hp": 0,
+        "special_attack": 3,
+        "special_defence": 0,
+        "speed": 0
+    },
+    "nature": "Naive",
+    "original_trainer": "MiniDuncan",
+    "health": 409,
+    "experience": 430629,
+    "shiny": 0,
+    "caught_ball": "cobblemon:beast_ball",
+    "gender": "GENDERLESS",
+    "friendship": 72,
+    "healing_timer": -1,
+    "gmax_factor": 0,
+    "gmax_level": 0,
+    "tera_type": "cobblemon:dragon",
+    "form_id": "normal",
+    "uuid": [
+        -1560474745,
+        -219462467,
+        -1153518707,
+        1106953352
+    ],
+    "scale_modifier": 1.0,
+    "met_date": "2025-04-14",
+    "met_level": 70,
+    "met_location": "a lovely place",
+    "origin_game": "Cobblemon",
+    "language": 2,
+    "tid": null,
+    "pid": null,
+    "sid": null,
+    "home_tracker": 0,
+    "encryption_constant": 0,
+    "height": 0,
+    "weight": 0,
+    "scale": 0,
+    "ribbons": [],
+    "relearn_flags": [],
+    "fateful_encounter": false,
+    "memories": {
+        "memory_type": 0,
+        "memory_intensity": 0,
+        "memory_feeling": 0,
+        "memory_variable": 0
+    },
+    "box_number": 1,
+    "slot_number": 6
+}

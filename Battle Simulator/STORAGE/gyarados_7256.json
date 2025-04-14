@@ -1,0 +1,72 @@
+{
+    "species": "gyarados",
+    "nickname": "Gyarados",
+    "level": 49,
+    "ability": "Intimidate",
+    "moves": [
+        "rain-dance",
+        "hurricane",
+        "hydro-pump",
+        "dragon-dance"
+    ],
+    "ivs": {
+        "attack": 31,
+        "defence": 22,
+        "hp": 29,
+        "special_attack": 9,
+        "special_defence": 31,
+        "speed": 31
+    },
+    "evs": {
+        "attack": 0,
+        "defence": 0,
+        "hp": 0,
+        "special_attack": 0,
+        "special_defence": 0,
+        "speed": 3
+    },
+    "nature": "Timid",
+    "original_trainer": "MiniDuncan",
+    "health": 166,
+    "experience": 147061,
+    "shiny": 0,
+    "caught_ball": "cobblemon:ultra_ball",
+    "gender": "MALE",
+    "friendship": 51,
+    "healing_timer": -1,
+    "gmax_factor": 0,
+    "gmax_level": 0,
+    "tera_type": "cobblemon:flying",
+    "form_id": "normal",
+    "uuid": [
+        796407797,
+        1399801001,
+        -1700484462,
+        945166471
+    ],
+    "scale_modifier": 1.0,
+    "met_date": "2025-04-14",
+    "met_level": 49,
+    "met_location": "a lovely place",
+    "origin_game": "Cobblemon",
+    "language": 2,
+    "tid": null,
+    "pid": null,
+    "sid": null,
+    "home_tracker": 0,
+    "encryption_constant": 0,
+    "height": 0,
+    "weight": 0,
+    "scale": 0,
+    "ribbons": [],
+    "relearn_flags": [],
+    "fateful_encounter": false,
+    "memories": {
+        "memory_type": 0,
+        "memory_intensity": 0,
+        "memory_feeling": 0,
+        "memory_variable": 0
+    },
+    "box_number": 2,
+    "slot_number": 26
+}

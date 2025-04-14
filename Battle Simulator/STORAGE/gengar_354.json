@@ -1,0 +1,72 @@
+{
+    "species": "gengar",
+    "nickname": "Goole",
+    "level": 64,
+    "ability": "Cursed-body",
+    "moves": [
+        "nightmare",
+        "hypnosis",
+        "hex",
+        "dream-eater"
+    ],
+    "ivs": {
+        "attack": 30,
+        "defence": 4,
+        "hp": 27,
+        "special_attack": 15,
+        "special_defence": 31,
+        "speed": 0
+    },
+    "evs": {
+        "attack": 12,
+        "defence": 4,
+        "hp": 2,
+        "special_attack": 3,
+        "special_defence": 1,
+        "speed": 10
+    },
+    "nature": "Bold",
+    "original_trainer": "MiniDuncan",
+    "health": 168,
+    "experience": 264903,
+    "shiny": 0,
+    "caught_ball": "cobblemon:ultra_ball",
+    "gender": "MALE",
+    "friendship": 122,
+    "healing_timer": -1,
+    "gmax_factor": 0,
+    "gmax_level": 0,
+    "tera_type": "cobblemon:ghost",
+    "form_id": "normal",
+    "uuid": [
+        1813914583,
+        692864144,
+        -1790843286,
+        -1582912732
+    ],
+    "scale_modifier": 1.0,
+    "met_date": "2025-04-14",
+    "met_level": 64,
+    "met_location": "a lovely place",
+    "origin_game": "Cobblemon",
+    "language": 2,
+    "tid": null,
+    "pid": null,
+    "sid": null,
+    "home_tracker": 0,
+    "encryption_constant": 0,
+    "height": 0,
+    "weight": 0,
+    "scale": 0,
+    "ribbons": [],
+    "relearn_flags": [],
+    "fateful_encounter": false,
+    "memories": {
+        "memory_type": 0,
+        "memory_intensity": 0,
+        "memory_feeling": 0,
+        "memory_variable": 0
+    },
+    "box_number": 6,
+    "slot_number": 1
+}

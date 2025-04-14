@@ -1,0 +1,72 @@
+{
+    "species": "dugtrio",
+    "nickname": "Dugtrio",
+    "level": 42,
+    "ability": "Sand-veil",
+    "moves": [
+        "earth-power",
+        "dig",
+        "sandstorm",
+        "iron-head"
+    ],
+    "ivs": {
+        "attack": 7,
+        "defence": 12,
+        "hp": 18,
+        "special_attack": 30,
+        "special_defence": 18,
+        "speed": 29
+    },
+    "evs": {
+        "attack": 0,
+        "defence": 0,
+        "hp": 0,
+        "special_attack": 0,
+        "special_defence": 0,
+        "speed": 0
+    },
+    "nature": "Brave",
+    "original_trainer": "MiniDuncan",
+    "health": 88,
+    "experience": 74088,
+    "shiny": 0,
+    "caught_ball": "cobblemon:master_ball",
+    "gender": "FEMALE",
+    "friendship": 50,
+    "healing_timer": 60,
+    "gmax_factor": 0,
+    "gmax_level": 0,
+    "tera_type": "cobblemon:ground",
+    "form_id": "alola",
+    "uuid": [
+        -1341559073,
+        -1017360607,
+        -1841035313,
+        -756196454
+    ],
+    "scale_modifier": 1.0,
+    "met_date": "2025-04-14",
+    "met_level": 42,
+    "met_location": "a lovely place",
+    "origin_game": "Cobblemon",
+    "language": 2,
+    "tid": null,
+    "pid": null,
+    "sid": null,
+    "home_tracker": 0,
+    "encryption_constant": 0,
+    "height": 0,
+    "weight": 0,
+    "scale": 0,
+    "ribbons": [],
+    "relearn_flags": [],
+    "fateful_encounter": false,
+    "memories": {
+        "memory_type": 0,
+        "memory_intensity": 0,
+        "memory_feeling": 0,
+        "memory_variable": 0
+    },
+    "box_number": 3,
+    "slot_number": 8
+}

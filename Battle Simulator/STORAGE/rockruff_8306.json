@@ -1,0 +1,72 @@
+{
+    "species": "rockruff",
+    "nickname": "Rockruff",
+    "level": 22,
+    "ability": "Keen-eye",
+    "moves": [
+        "bite",
+        "odor-sleuth",
+        "howl",
+        "rock-throw"
+    ],
+    "ivs": {
+        "attack": 27,
+        "defence": 13,
+        "hp": 8,
+        "special_attack": 15,
+        "special_defence": 10,
+        "speed": 3
+    },
+    "evs": {
+        "attack": 0,
+        "defence": 0,
+        "hp": 0,
+        "special_attack": 0,
+        "special_defence": 0,
+        "speed": 0
+    },
+    "nature": "Docile",
+    "original_trainer": "MiniDuncan",
+    "health": 53,
+    "experience": 10648,
+    "shiny": 0,
+    "caught_ball": "cobblemon:ultra_ball",
+    "gender": "FEMALE",
+    "friendship": 50,
+    "healing_timer": -1,
+    "gmax_factor": 0,
+    "gmax_level": 0,
+    "tera_type": "cobblemon:rock",
+    "form_id": "normal",
+    "uuid": [
+        -1401198965,
+        -67941482,
+        -1579832587,
+        1529318347
+    ],
+    "scale_modifier": 1.0,
+    "met_date": "2025-04-14",
+    "met_level": 22,
+    "met_location": "a lovely place",
+    "origin_game": "Cobblemon",
+    "language": 2,
+    "tid": null,
+    "pid": null,
+    "sid": null,
+    "home_tracker": 0,
+    "encryption_constant": 0,
+    "height": 0,
+    "weight": 0,
+    "scale": 0,
+    "ribbons": [],
+    "relearn_flags": [],
+    "fateful_encounter": false,
+    "memories": {
+        "memory_type": 0,
+        "memory_intensity": 0,
+        "memory_feeling": 0,
+        "memory_variable": 0
+    },
+    "box_number": 2,
+    "slot_number": 6
+}

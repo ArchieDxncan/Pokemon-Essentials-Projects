@@ -1,0 +1,72 @@
+{
+    "species": "mamoswine",
+    "nickname": "Mamoswine",
+    "level": 49,
+    "ability": "Snow-cloak",
+    "moves": [
+        "take-down",
+        "amnesia",
+        "icy-wind",
+        "endure"
+    ],
+    "ivs": {
+        "attack": 26,
+        "defence": 25,
+        "hp": 0,
+        "special_attack": 12,
+        "special_defence": 28,
+        "speed": 25
+    },
+    "evs": {
+        "attack": 0,
+        "defence": 0,
+        "hp": 0,
+        "special_attack": 0,
+        "special_defence": 0,
+        "speed": 0
+    },
+    "nature": "Brave",
+    "original_trainer": "MiniDuncan",
+    "health": 166,
+    "experience": 147061,
+    "shiny": 0,
+    "caught_ball": "cobblemon:quick_ball",
+    "gender": "FEMALE",
+    "friendship": 50,
+    "healing_timer": 60,
+    "gmax_factor": 0,
+    "gmax_level": 0,
+    "tera_type": "cobblemon:ground",
+    "form_id": "normal",
+    "uuid": [
+        338810459,
+        765804913,
+        -1503963310,
+        828213942
+    ],
+    "scale_modifier": 1.0,
+    "met_date": "2025-04-14",
+    "met_level": 49,
+    "met_location": "a lovely place",
+    "origin_game": "Cobblemon",
+    "language": 2,
+    "tid": null,
+    "pid": null,
+    "sid": null,
+    "home_tracker": 0,
+    "encryption_constant": 0,
+    "height": 0,
+    "weight": 0,
+    "scale": 0,
+    "ribbons": [],
+    "relearn_flags": [],
+    "fateful_encounter": false,
+    "memories": {
+        "memory_type": 0,
+        "memory_intensity": 0,
+        "memory_feeling": 0,
+        "memory_variable": 0
+    },
+    "box_number": 4,
+    "slot_number": 12
+}

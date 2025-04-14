@@ -1,0 +1,72 @@
+{
+    "species": "sinistea",
+    "nickname": "Sinistea",
+    "level": 25,
+    "ability": "Weak-armor",
+    "moves": [
+        "sucker-punch",
+        "protect",
+        "mega-drain",
+        "aromatic-mist"
+    ],
+    "ivs": {
+        "attack": 14,
+        "defence": 17,
+        "hp": 7,
+        "special_attack": 19,
+        "special_defence": 18,
+        "speed": 30
+    },
+    "evs": {
+        "attack": 0,
+        "defence": 0,
+        "hp": 0,
+        "special_attack": 0,
+        "special_defence": 0,
+        "speed": 0
+    },
+    "nature": "Adamant",
+    "original_trainer": "MiniDuncan",
+    "health": 56,
+    "experience": 15625,
+    "shiny": 0,
+    "caught_ball": "cobblemon:quick_ball",
+    "gender": "GENDERLESS",
+    "friendship": 50,
+    "healing_timer": 60,
+    "gmax_factor": 0,
+    "gmax_level": 0,
+    "tera_type": "cobblemon:ghost",
+    "form_id": "normal",
+    "uuid": [
+        1009838602,
+        -1020247556,
+        -2133347521,
+        -609581551
+    ],
+    "scale_modifier": 1.0,
+    "met_date": "2025-02-27",
+    "met_level": 25,
+    "met_location": "minecraft:dark_forest",
+    "origin_game": "Cobblemon",
+    "language": 2,
+    "tid": null,
+    "pid": null,
+    "sid": null,
+    "home_tracker": 0,
+    "encryption_constant": 0,
+    "height": 0,
+    "weight": 0,
+    "scale": 0,
+    "ribbons": [],
+    "relearn_flags": [],
+    "fateful_encounter": false,
+    "memories": {
+        "memory_type": 0,
+        "memory_intensity": 0,
+        "memory_feeling": 0,
+        "memory_variable": 0
+    },
+    "box_number": 5,
+    "slot_number": 13
+}

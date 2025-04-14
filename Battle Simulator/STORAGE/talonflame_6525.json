@@ -1,0 +1,72 @@
+{
+    "species": "talonflame",
+    "nickname": "Angry Bird",
+    "level": 62,
+    "ability": "Flame-body",
+    "moves": [
+        "agility",
+        "steel-wing",
+        "aerial-ace",
+        "flare-blitz"
+    ],
+    "ivs": {
+        "attack": 26,
+        "defence": 30,
+        "hp": 25,
+        "special_attack": 30,
+        "special_defence": 16,
+        "speed": 9
+    },
+    "evs": {
+        "attack": 25,
+        "defence": 5,
+        "hp": 3,
+        "special_attack": 2,
+        "special_defence": 8,
+        "speed": 21
+    },
+    "nature": "Mild",
+    "original_trainer": "MiniDuncan",
+    "health": 184,
+    "experience": 236985,
+    "shiny": 0,
+    "caught_ball": "cobblemon:great_ball",
+    "gender": "MALE",
+    "friendship": 144,
+    "healing_timer": -1,
+    "gmax_factor": 0,
+    "gmax_level": 0,
+    "tera_type": "cobblemon:fire",
+    "form_id": "normal",
+    "uuid": [
+        -1696874619,
+        -1862450160,
+        -1161911321,
+        694465548
+    ],
+    "scale_modifier": 1.0,
+    "met_date": "2025-04-14",
+    "met_level": 62,
+    "met_location": "a lovely place",
+    "origin_game": "Cobblemon",
+    "language": 2,
+    "tid": null,
+    "pid": null,
+    "sid": null,
+    "home_tracker": 0,
+    "encryption_constant": 0,
+    "height": 0,
+    "weight": 0,
+    "scale": 0,
+    "ribbons": [],
+    "relearn_flags": [],
+    "fateful_encounter": false,
+    "memories": {
+        "memory_type": 0,
+        "memory_intensity": 0,
+        "memory_feeling": 0,
+        "memory_variable": 0
+    },
+    "box_number": 5,
+    "slot_number": 30
+}

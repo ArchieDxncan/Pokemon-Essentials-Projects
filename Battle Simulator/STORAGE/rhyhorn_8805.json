@@ -1,0 +1,72 @@
+{
+    "species": "rhyhorn",
+    "nickname": "Rhyhorn",
+    "level": 31,
+    "ability": "Rock-head",
+    "moves": [
+        "bulldoze",
+        "smack-down",
+        "scary-face",
+        "horn-attack"
+    ],
+    "ivs": {
+        "attack": 2,
+        "defence": 24,
+        "hp": 0,
+        "special_attack": 9,
+        "special_defence": 5,
+        "speed": 26
+    },
+    "evs": {
+        "attack": 0,
+        "defence": 0,
+        "hp": 0,
+        "special_attack": 0,
+        "special_defence": 0,
+        "speed": 2
+    },
+    "nature": "Lonely",
+    "original_trainer": "MiniDuncan",
+    "health": 90,
+    "experience": 37238,
+    "shiny": 0,
+    "caught_ball": "cobblemon:poke_ball",
+    "gender": "MALE",
+    "friendship": 54,
+    "healing_timer": -1,
+    "gmax_factor": 0,
+    "gmax_level": 0,
+    "tera_type": "cobblemon:rock",
+    "form_id": "normal",
+    "uuid": [
+        693762757,
+        705841480,
+        -1373808315,
+        1281472605
+    ],
+    "scale_modifier": 1.0,
+    "met_date": "2025-04-14",
+    "met_level": 31,
+    "met_location": "a lovely place",
+    "origin_game": "Cobblemon",
+    "language": 2,
+    "tid": null,
+    "pid": null,
+    "sid": null,
+    "home_tracker": 0,
+    "encryption_constant": 0,
+    "height": 0,
+    "weight": 0,
+    "scale": 0,
+    "ribbons": [],
+    "relearn_flags": [],
+    "fateful_encounter": false,
+    "memories": {
+        "memory_type": 0,
+        "memory_intensity": 0,
+        "memory_feeling": 0,
+        "memory_variable": 0
+    },
+    "box_number": 2,
+    "slot_number": 3
+}

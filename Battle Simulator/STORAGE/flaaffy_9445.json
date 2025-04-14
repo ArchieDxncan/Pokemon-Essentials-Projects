@@ -1,0 +1,72 @@
+{
+    "species": "flaaffy",
+    "nickname": "Flaaffy",
+    "level": 31,
+    "ability": "Static",
+    "moves": [
+        "confuse-ray",
+        "electro-ball",
+        "take-down",
+        "charge"
+    ],
+    "ivs": {
+        "attack": 23,
+        "defence": 4,
+        "hp": 2,
+        "special_attack": 31,
+        "special_defence": 4,
+        "speed": 3
+    },
+    "evs": {
+        "attack": 0,
+        "defence": 0,
+        "hp": 0,
+        "special_attack": 0,
+        "special_defence": 0,
+        "speed": 0
+    },
+    "nature": "Lax",
+    "original_trainer": "MiniDuncan",
+    "health": 85,
+    "experience": 24294,
+    "shiny": 0,
+    "caught_ball": "cobblemon:quick_ball",
+    "gender": "MALE",
+    "friendship": 50,
+    "healing_timer": 60,
+    "gmax_factor": 0,
+    "gmax_level": 0,
+    "tera_type": "cobblemon:electric",
+    "form_id": "normal",
+    "uuid": [
+        1753973917,
+        -282049519,
+        -1359426365,
+        -1071667637
+    ],
+    "scale_modifier": 1.0,
+    "met_date": "2025-04-14",
+    "met_level": 31,
+    "met_location": "a lovely place",
+    "origin_game": "Cobblemon",
+    "language": 2,
+    "tid": null,
+    "pid": null,
+    "sid": null,
+    "home_tracker": 0,
+    "encryption_constant": 0,
+    "height": 0,
+    "weight": 0,
+    "scale": 0,
+    "ribbons": [],
+    "relearn_flags": [],
+    "fateful_encounter": false,
+    "memories": {
+        "memory_type": 0,
+        "memory_intensity": 0,
+        "memory_feeling": 0,
+        "memory_variable": 0
+    },
+    "box_number": 4,
+    "slot_number": 10
+}

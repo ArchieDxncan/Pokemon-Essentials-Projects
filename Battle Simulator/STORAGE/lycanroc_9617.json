@@ -1,0 +1,72 @@
+{
+    "species": "lycanroc",
+    "nickname": "Lycanroc",
+    "level": 44,
+    "ability": "Vital-spirit",
+    "moves": [
+        "crunch",
+        "rock-slide",
+        "roar",
+        "rock-tomb"
+    ],
+    "ivs": {
+        "attack": 12,
+        "defence": 3,
+        "hp": 17,
+        "special_attack": 1,
+        "special_defence": 11,
+        "speed": 11
+    },
+    "evs": {
+        "attack": 0,
+        "defence": 0,
+        "hp": 0,
+        "special_attack": 0,
+        "special_defence": 0,
+        "speed": 0
+    },
+    "nature": "Quirky",
+    "original_trainer": "MiniDuncan",
+    "health": 136,
+    "experience": 85184,
+    "shiny": 0,
+    "caught_ball": "cobblemon:quick_ball",
+    "gender": "MALE",
+    "friendship": 35,
+    "healing_timer": 60,
+    "gmax_factor": 0,
+    "gmax_level": 0,
+    "tera_type": "cobblemon:rock",
+    "form_id": "midnight",
+    "uuid": [
+        1259516097,
+        1923238810,
+        -1750230476,
+        1777877065
+    ],
+    "scale_modifier": 1.0,
+    "met_date": "2025-04-14",
+    "met_level": 44,
+    "met_location": "a lovely place",
+    "origin_game": "Cobblemon",
+    "language": 2,
+    "tid": null,
+    "pid": null,
+    "sid": null,
+    "home_tracker": 0,
+    "encryption_constant": 0,
+    "height": 0,
+    "weight": 0,
+    "scale": 0,
+    "ribbons": [],
+    "relearn_flags": [],
+    "fateful_encounter": false,
+    "memories": {
+        "memory_type": 0,
+        "memory_intensity": 0,
+        "memory_feeling": 0,
+        "memory_variable": 0
+    },
+    "box_number": 3,
+    "slot_number": 7
+}

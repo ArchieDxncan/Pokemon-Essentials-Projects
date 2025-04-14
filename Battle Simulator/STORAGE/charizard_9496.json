@@ -1,0 +1,72 @@
+{
+    "species": "charizard",
+    "nickname": "Dorito",
+    "level": 71,
+    "ability": "blaze",
+    "moves": [
+        "fire-spin",
+        "flare-blitz",
+        "dragon-claw",
+        "air-slash"
+    ],
+    "ivs": {
+        "attack": 2,
+        "defence": 31,
+        "hp": 13,
+        "special_attack": 14,
+        "special_defence": 23,
+        "speed": 31
+    },
+    "evs": {
+        "attack": 0,
+        "defence": 0,
+        "hp": 0,
+        "special_attack": 0,
+        "special_defence": 0,
+        "speed": 0
+    },
+    "nature": "Adamant",
+    "original_trainer": "MiniDuncan",
+    "health": 200,
+    "experience": 368548,
+    "shiny": 0,
+    "caught_ball": "cobblemon:great_ball",
+    "gender": "MALE",
+    "friendship": 200,
+    "healing_timer": -1,
+    "gmax_factor": 0,
+    "gmax_level": 0,
+    "tera_type": "cobblemon:fire",
+    "form_id": "normal",
+    "uuid": [
+        2131502610,
+        -2050930706,
+        -1490265269,
+        1719095900
+    ],
+    "scale_modifier": 1.0,
+    "met_date": "2023-4-1",
+    "met_level": 1,
+    "met_location": "96",
+    "origin_game": "VL",
+    "language": 2,
+    "tid": 46424,
+    "pid": 4116268985,
+    "sid": 31503,
+    "home_tracker": 0,
+    "encryption_constant": 2771907383,
+    "height": 166,
+    "weight": 166,
+    "scale": 166,
+    "ribbons": [],
+    "relearn_flags": [],
+    "fateful_encounter": false,
+    "memories": {
+        "memory_type": 0,
+        "memory_intensity": 0,
+        "memory_feeling": 0,
+        "memory_variable": 0
+    },
+    "box_number": 5,
+    "slot_number": 22
+}

@@ -1,0 +1,72 @@
+{
+    "species": "rattata",
+    "nickname": "Rattata",
+    "level": 20,
+    "ability": "Guts",
+    "moves": [
+        "assurance",
+        "hyper-fang",
+        "pursuit",
+        "bite"
+    ],
+    "ivs": {
+        "attack": 5,
+        "defence": 20,
+        "hp": 27,
+        "special_attack": 20,
+        "special_defence": 4,
+        "speed": 31
+    },
+    "evs": {
+        "attack": 0,
+        "defence": 0,
+        "hp": 0,
+        "special_attack": 0,
+        "special_defence": 0,
+        "speed": 0
+    },
+    "nature": "Bashful",
+    "original_trainer": "MiniDuncan",
+    "health": 24,
+    "experience": 8000,
+    "shiny": 0,
+    "caught_ball": "cobblemon:great_ball",
+    "gender": "MALE",
+    "friendship": 49,
+    "healing_timer": 53,
+    "gmax_factor": 0,
+    "gmax_level": 0,
+    "tera_type": "cobblemon:normal",
+    "form_id": "normal",
+    "uuid": [
+        752527084,
+        1076250978,
+        -2022790458,
+        1861883450
+    ],
+    "scale_modifier": 1.0,
+    "met_date": "2025-04-14",
+    "met_level": 20,
+    "met_location": "a lovely place",
+    "origin_game": "Cobblemon",
+    "language": 2,
+    "tid": null,
+    "pid": null,
+    "sid": null,
+    "home_tracker": 0,
+    "encryption_constant": 0,
+    "height": 0,
+    "weight": 0,
+    "scale": 0,
+    "ribbons": [],
+    "relearn_flags": [],
+    "fateful_encounter": false,
+    "memories": {
+        "memory_type": 0,
+        "memory_intensity": 0,
+        "memory_feeling": 0,
+        "memory_variable": 0
+    },
+    "box_number": 2,
+    "slot_number": 4
+}

@@ -1,0 +1,72 @@
+{
+    "species": "mewtwo",
+    "nickname": "Mummy",
+    "level": 72,
+    "ability": "Pressure",
+    "moves": [
+        "fire-punch",
+        "blizzard",
+        "laser-focus",
+        "psystrike"
+    ],
+    "ivs": {
+        "attack": 4,
+        "defence": 11,
+        "hp": 20,
+        "special_attack": 19,
+        "special_defence": 2,
+        "speed": 12
+    },
+    "evs": {
+        "attack": 0,
+        "defence": 1,
+        "hp": 0,
+        "special_attack": 7,
+        "special_defence": 0,
+        "speed": 10
+    },
+    "nature": "Jolly",
+    "original_trainer": "MiniDuncan",
+    "health": 249,
+    "experience": 480544,
+    "shiny": 0,
+    "caught_ball": "cobblemon:master_ball",
+    "gender": "GENDERLESS",
+    "friendship": 52,
+    "healing_timer": -1,
+    "gmax_factor": 0,
+    "gmax_level": 0,
+    "tera_type": "cobblemon:psychic",
+    "form_id": "normal",
+    "uuid": [
+        -2031304880,
+        -443461822,
+        -1513141222,
+        1223156382
+    ],
+    "scale_modifier": 1.0,
+    "met_date": "2025-04-14",
+    "met_level": 72,
+    "met_location": "a lovely place",
+    "origin_game": "Cobblemon",
+    "language": 2,
+    "tid": null,
+    "pid": null,
+    "sid": null,
+    "home_tracker": 0,
+    "encryption_constant": 0,
+    "height": 0,
+    "weight": 0,
+    "scale": 0,
+    "ribbons": [],
+    "relearn_flags": [],
+    "fateful_encounter": false,
+    "memories": {
+        "memory_type": 0,
+        "memory_intensity": 0,
+        "memory_feeling": 0,
+        "memory_variable": 0
+    },
+    "box_number": 1,
+    "slot_number": 10
+}

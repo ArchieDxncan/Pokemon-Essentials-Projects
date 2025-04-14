@@ -1,0 +1,72 @@
+{
+    "species": "lugia",
+    "nickname": "Lugster",
+    "level": 55,
+    "ability": "Pressure",
+    "moves": [
+        "aeroblast",
+        "recover",
+        "extrasensory",
+        "calm-mind"
+    ],
+    "ivs": {
+        "attack": 10,
+        "defence": 12,
+        "hp": 26,
+        "special_attack": 30,
+        "special_defence": 24,
+        "speed": 19
+    },
+    "evs": {
+        "attack": 0,
+        "defence": 0,
+        "hp": 0,
+        "special_attack": 0,
+        "special_defence": 0,
+        "speed": 6
+    },
+    "nature": "Bashful",
+    "original_trainer": "MiniDuncan",
+    "health": 195,
+    "experience": 207968,
+    "shiny": 0,
+    "caught_ball": "cobblemon:net_ball",
+    "gender": "GENDERLESS",
+    "friendship": 51,
+    "healing_timer": -1,
+    "gmax_factor": 0,
+    "gmax_level": 0,
+    "tera_type": "cobblemon:flying",
+    "form_id": "normal",
+    "uuid": [
+        504992932,
+        -1103738364,
+        -1326053213,
+        1689765056
+    ],
+    "scale_modifier": 1.0,
+    "met_date": "2025-04-14",
+    "met_level": 55,
+    "met_location": "a lovely place",
+    "origin_game": "Cobblemon",
+    "language": 2,
+    "tid": null,
+    "pid": null,
+    "sid": null,
+    "home_tracker": 0,
+    "encryption_constant": 0,
+    "height": 0,
+    "weight": 0,
+    "scale": 0,
+    "ribbons": [],
+    "relearn_flags": [],
+    "fateful_encounter": false,
+    "memories": {
+        "memory_type": 0,
+        "memory_intensity": 0,
+        "memory_feeling": 0,
+        "memory_variable": 0
+    },
+    "box_number": 1,
+    "slot_number": 9
+}

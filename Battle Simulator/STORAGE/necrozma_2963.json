@@ -1,0 +1,72 @@
+{
+    "species": "necrozma",
+    "nickname": "Necrozma",
+    "level": 70,
+    "ability": "Prism-armor",
+    "moves": [
+        "wring-out",
+        "power-gem",
+        "iron-defense",
+        "rock-blast"
+    ],
+    "ivs": {
+        "attack": 31,
+        "defence": 23,
+        "hp": 28,
+        "special_attack": 3,
+        "special_defence": 10,
+        "speed": 1
+    },
+    "evs": {
+        "attack": 0,
+        "defence": 0,
+        "hp": 0,
+        "special_attack": 0,
+        "special_defence": 0,
+        "speed": 0
+    },
+    "nature": "Timid",
+    "original_trainer": "MiniDuncan",
+    "health": 235,
+    "experience": 428750,
+    "shiny": 0,
+    "caught_ball": "cobblemon:master_ball",
+    "gender": "GENDERLESS",
+    "friendship": 0,
+    "healing_timer": 60,
+    "gmax_factor": 0,
+    "gmax_level": 0,
+    "tera_type": "cobblemon:psychic",
+    "form_id": "normal",
+    "uuid": [
+        -616913155,
+        -94027275,
+        -1469636063,
+        -1432131969
+    ],
+    "scale_modifier": 1.0,
+    "met_date": "2025-04-14",
+    "met_level": 70,
+    "met_location": "a lovely place",
+    "origin_game": "Cobblemon",
+    "language": 2,
+    "tid": null,
+    "pid": null,
+    "sid": null,
+    "home_tracker": 0,
+    "encryption_constant": 0,
+    "height": 0,
+    "weight": 0,
+    "scale": 0,
+    "ribbons": [],
+    "relearn_flags": [],
+    "fateful_encounter": false,
+    "memories": {
+        "memory_type": 0,
+        "memory_intensity": 0,
+        "memory_feeling": 0,
+        "memory_variable": 0
+    },
+    "box_number": 1,
+    "slot_number": 16
+}

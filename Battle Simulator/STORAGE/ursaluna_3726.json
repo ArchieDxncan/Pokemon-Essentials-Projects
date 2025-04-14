@@ -1,0 +1,72 @@
+{
+    "species": "ursaluna",
+    "nickname": "Ursaluna",
+    "level": 60,
+    "ability": "Minds-eye",
+    "moves": [
+        "moonblast",
+        "earth-power",
+        "snore",
+        "rest"
+    ],
+    "ivs": {
+        "attack": 11,
+        "defence": 8,
+        "hp": 24,
+        "special_attack": 4,
+        "special_defence": 4,
+        "speed": 20
+    },
+    "evs": {
+        "attack": 0,
+        "defence": 0,
+        "hp": 0,
+        "special_attack": 0,
+        "special_defence": 0,
+        "speed": 1
+    },
+    "nature": "Rash",
+    "original_trainer": "MiniDuncan",
+    "health": 135,
+    "experience": 216616,
+    "shiny": 0,
+    "caught_ball": "cobblemon:master_ball",
+    "gender": "MALE",
+    "friendship": 100,
+    "healing_timer": 60,
+    "gmax_factor": 0,
+    "gmax_level": 0,
+    "tera_type": "cobblemon:normal",
+    "form_id": "bloodmoon",
+    "uuid": [
+        1676995735,
+        -57980880,
+        -1831057651,
+        1073746538
+    ],
+    "scale_modifier": 1.0,
+    "met_date": "2025-02-27",
+    "met_level": 60,
+    "met_location": "minecraft:dark_forest",
+    "origin_game": "Cobblemon",
+    "language": 2,
+    "tid": null,
+    "pid": null,
+    "sid": null,
+    "home_tracker": 0,
+    "encryption_constant": 0,
+    "height": 0,
+    "weight": 0,
+    "scale": 0,
+    "ribbons": [],
+    "relearn_flags": [],
+    "fateful_encounter": false,
+    "memories": {
+        "memory_type": 0,
+        "memory_intensity": 0,
+        "memory_feeling": 0,
+        "memory_variable": 0
+    },
+    "box_number": 5,
+    "slot_number": 15
+}

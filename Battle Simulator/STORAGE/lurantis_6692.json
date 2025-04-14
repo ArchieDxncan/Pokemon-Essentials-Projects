@@ -1,0 +1,72 @@
+{
+    "species": "lurantis",
+    "nickname": "Lurantis",
+    "level": 44,
+    "ability": "Leaf-guard",
+    "moves": [
+        "leaf-blade",
+        "synthesis",
+        "x-scissor",
+        "slash"
+    ],
+    "ivs": {
+        "attack": 26,
+        "defence": 5,
+        "hp": 19,
+        "special_attack": 5,
+        "special_defence": 25,
+        "speed": 9
+    },
+    "evs": {
+        "attack": 0,
+        "defence": 0,
+        "hp": 0,
+        "special_attack": 0,
+        "special_defence": 0,
+        "speed": 0
+    },
+    "nature": "Rash",
+    "original_trainer": "MiniDuncan",
+    "health": 9,
+    "experience": 85184,
+    "shiny": 0,
+    "caught_ball": "cobblemon:dusk_ball",
+    "gender": "FEMALE",
+    "friendship": 50,
+    "healing_timer": 60,
+    "gmax_factor": 0,
+    "gmax_level": 0,
+    "tera_type": "cobblemon:grass",
+    "form_id": "normal",
+    "uuid": [
+        -1392382472,
+        -767930620,
+        -1435106514,
+        -1826777332
+    ],
+    "scale_modifier": 1.0,
+    "met_date": "2025-04-14",
+    "met_level": 44,
+    "met_location": "a lovely place",
+    "origin_game": "Cobblemon",
+    "language": 2,
+    "tid": null,
+    "pid": null,
+    "sid": null,
+    "home_tracker": 0,
+    "encryption_constant": 0,
+    "height": 0,
+    "weight": 0,
+    "scale": 0,
+    "ribbons": [],
+    "relearn_flags": [],
+    "fateful_encounter": false,
+    "memories": {
+        "memory_type": 0,
+        "memory_intensity": 0,
+        "memory_feeling": 0,
+        "memory_variable": 0
+    },
+    "box_number": 4,
+    "slot_number": 20
+}
