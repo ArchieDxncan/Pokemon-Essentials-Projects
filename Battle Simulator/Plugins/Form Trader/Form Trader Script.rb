@@ -60,7 +60,6 @@ def pbChooseForm(allowIneligible = false)
     end
     species_data = GameData::Species.get(pkmn.species)
 	elig = false if pkmn.egg? || pkmn.shadowPokemon? || pkmn.cannot_trade || 
-	  species_data.egg_groups.include?(:Undiscovered) || 
 	  MultipleForms.hasFunction?(pkmn, "getForm") || 
 	  MultipleForms.hasFunction?(pkmn, "getFormOnEnteringBattle") || 
 	  MultipleForms.hasFunction?(pkmn, "getMegaForm") || 
@@ -225,10 +224,7 @@ class PokemonStorageScreen
           pokemon = @storage[selected[0], selected[1]]
           next if !pokemon
           species_data = GameData::Species.get(pokemon.species)
-          if species_data && species_data.egg_groups.include?(:Undiscovered)
-            pbMessage("Legendary Pokemon are too rare! I can't find one of those!")
-            next
-          elsif MultipleForms.hasFunction?(pokemon, "getForm")
+          if MultipleForms.hasFunction?(pokemon, "getForm")
             pbMessage("This species decides its own form and cannot be changed.")
             next
           elsif MultipleForms.hasFunction?(pokemon, "getFormOnEnteringBattle") || MultipleForms.hasFunction?(pokemon, "getMegaForm") || MultipleForms.hasFunction?(pokemon, "getUltraBurstForm") || MultipleForms.hasFunction?(pokemon, "getFormOnLeavingBattle") || species_data.has_flag?("SpecialForm") 

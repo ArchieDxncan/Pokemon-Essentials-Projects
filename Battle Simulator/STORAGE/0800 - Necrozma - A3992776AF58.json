@@ -6,8 +6,7 @@
     "moves": [
         "power-gem",
         "photon-geyser",
-        "prismatic-laser",
-        null
+        "prismatic-laser"
     ],
     "ivs": {
         "hp": 16,

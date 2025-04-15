@@ -1,5 +1,5 @@
 module CableClub
-  HOST = "31.127.25.166"
+  HOST = "kuba.miniduncan.net"
   PORT = 9999
   
   FOLDER_FOR_BATTLE_PRESETS = "OnlinePresets"
