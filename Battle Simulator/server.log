@@ -34,3 +34,11 @@
 2025-04-13 18:06:59,453: INFO: 127.0.0.1:56305/connected: disconnected (peer disconnected)
 2025-04-13 18:16:59,521: INFO: ---------------
 2025-04-13 18:16:59,744: INFO: Started Server on 127.0.0.1:9999
+2025-04-19 14:50:39,677: INFO: ---------------
+2025-04-19 14:50:39,930: INFO: Started Server on 0.0.0.0:9999
+2025-04-19 14:51:28,936: INFO: 127.0.0.1:50068/connecting: connect
+2025-04-19 14:51:58,146: INFO: 127.0.0.1:50087/connecting: connect
+2025-04-19 14:51:58,149: INFO: 127.0.0.1:50068/connected: connected to 127.0.0.1:50087/connected
+2025-04-19 14:51:58,149: INFO: 127.0.0.1:50087/connected: connected to 127.0.0.1:50068/connected
+2025-04-19 14:53:08,914: INFO: 127.0.0.1:50087/connected: disconnected (client disconnected)
+2025-04-19 14:53:08,914: INFO: 127.0.0.1:50068/connected: disconnected (peer disconnected)

@@ -49,6 +49,7 @@ class Server:
         self.rules_dir = rules_dir
         self.socket = None
         self.clients = {}
+        self.random_matchmaking_queue = []  # Queue for random matchmaking
         self.handlers = {
             Connecting: self.handle_connecting,
             Finding: self.handle_finding,
@@ -170,6 +171,12 @@ class Server:
             logging.info('%s: disconnected (%s)', st, reason)
             if isinstance(st.state, Connected):
                 self.disconnect(st.state.peer, "peer disconnected")
+            
+            # If player was in random matchmaking queue, remove them
+            self.random_matchmaking_queue = [
+                player for player in self.random_matchmaking_queue 
+                if player['socket'] != s
+            ]
 
     # Connecting, validate the party, and connect to peer if possible.
     def handle_connecting(self, s, st, message):
@@ -188,18 +195,50 @@ class Server:
                 win_text = record.int()
                 lose_text = record.int()
                 party = record.raw_all()
-                logging.debug('%s: Trainer %s, id %d (%s) -> Searching %d', st, name, public_id(id), hex(id), peer_id)
+                
+                # Handle random matchmaking with special ID 0
+                if peer_id == 0:  # 00000 will be sent as 0 by the client
+                    logging.debug('%s: Trainer %s, id %d (%s) -> Random Matchmaking', st, name, public_id(id), hex(id))
+                else:
+                    logging.debug('%s: Trainer %s, id %d (%s) -> Searching %d', st, name, public_id(id), hex(id), peer_id)
+                    
                 if not self.valid_party(record):
                     self.disconnect(s, "invalid party")
                 else:
                     st.state = Finding(peer_id, name, id, ttype, party, win_text, lose_text)
-                    # Is the peer already waiting?
-                    for s_, st_ in self.clients.items():
-                        if (st is not st_ and
-                            isinstance(st_.state, Finding) and
-                            public_id(st_.state.id) == peer_id and
-                            st_.state.peer_id == public_id(id)):
-                            self.connect(s, s_)
+                    
+                    # Random matchmaking handling
+                    if peer_id == 0:  # 00000 is sent as 0
+                        # Check if there's someone waiting in the queue
+                        if self.random_matchmaking_queue:
+                            # Get the first player in queue
+                            waiting_player = self.random_matchmaking_queue.pop(0)
+                            waiting_socket = waiting_player['socket']
+                            
+                            # Make sure the waiting player still exists
+                            if waiting_socket in self.clients:
+                                # Connect them
+                                self.connect(s, waiting_socket)
+                            else:
+                                # If waiting player disappeared, add current player to queue
+                                self.random_matchmaking_queue.append({
+                                    'socket': s,
+                                    'state': st
+                                })
+                        else:
+                            # No one waiting, add to queue
+                            self.random_matchmaking_queue.append({
+                                'socket': s,
+                                'state': st
+                            })
+                    else:
+                        # Regular direct connection - check if peer is already waiting
+                        for s_, st_ in self.clients.items():
+                            if (st is not st_ and
+                                isinstance(st_.state, Finding) and
+                                public_id(st_.state.id) == peer_id and
+                                st_.state.peer_id == public_id(id)):
+                                self.connect(s, s_)
 
     # Finding, simply ignore messages until the peer connects.
     def handle_finding(self, s, st, message):
@@ -217,6 +256,7 @@ class Server:
         writer.int(len(self.rules))
         for r in self.rules:
             writer.raw(r)
+
 
 
 class State:
@@ -382,61 +422,53 @@ def make_party_validator(pbs_dir):
                     exp = record.int()
                     # TODO: validate exp.
                     form = record.int()
-                    if form not in species_.forms:
-                        logging.debug('invalid form: %d', form)
-                        errors.append("invalid form")
+                    # FORM VALIDATION DISABLED
+                    # if form not in species_.forms:
+                    #     logging.debug('invalid form: %d', form)
+                    #     errors.append("invalid form")
                     item = record.str()
                     if item and item not in item_syms:
                         logging.debug('invalid item: %s', item)
                         errors.append("invalid item")
                     can_use_sketch = not set(SKETCH_MOVE_IDS).isdisjoint(species_.moves)
+                    
+                    # MOVE VALIDATION DISABLED - Regular moves
                     for _ in range(record.int()):
                         move = record.str()
-                        if move:
-                            if can_use_sketch and move not in move_syms:
-                                logging.debug('invalid move id (Sketched): %s', move)
-                                errors.append("invalid move (Sketched)")
-                            elif move not in species_.moves and not can_use_sketch:
-                                logging.debug('invalid move id: %s', move)
-                                errors.append("invalid move")
+                        # No validation for moves anymore
                         ppup = record.int()
                         if not (0 <= ppup <= 3):
                             logging.debug('invalid ppup for move id %s: %d', move, ppup)
                             errors.append("invalid ppup")
                         if PLA_INSTALLED:
                             mastery = record.bool_or_none()
+                    
+                    # MOVE VALIDATION DISABLED - First moves
                     for _ in range(record.int()):
                         move = record.str()
-                        if move:
-                            if can_use_sketch and move not in move_syms:
-                                logging.debug('invalid first move id (Sketched): %s', move)
-                                errors.append("invalid first move (Sketched)")
-                            elif move not in species_.moves and not can_use_sketch:
-                                logging.debug('invalid first move id: %s', move)
-                                errors.append("invalid first move")
+                        # No validation for first moves anymore
+                    
                     if PLA_INSTALLED:
+                        # MOVE VALIDATION DISABLED - Mastered moves
                         for _ in range(record.int()):
                             move = record.str()
-                            if move:
-                                if can_use_sketch and move not in move_syms:
-                                    logging.debug('invalid mastered move id (Sketched): %s', move)
-                                    errors.append("invalid mastered move (Sketched)")
-                                elif move not in species_.moves and not can_use_sketch:
-                                    logging.debug('invalid mastered move id: %s', move)
-                                    errors.append("invalid mastered move")
+                            # No validation for mastered moves anymore
+                    
                     gender = record.int()
-                    if gender not in species_.genders:
-                        logging.debug('invalid gender: %d', gender)
-                        errors.append("invalid gender")
+                    # GENDER VALIDATION DISABLED
+                    # if gender not in species_.genders:
+                    #     logging.debug('invalid gender: %d', gender)
+                    #     errors.append("invalid gender")
                     shiny = record.bool_or_none()
                     ability = record.str()
+                    # ABILITY VALIDATION DISABLED
                     # stricter check
                     #if ability and ability not in species_.abilities):
                     #    logging.debug('invalid ability strict: %s', ability)
                     #    errors.append("invalid ability strict")
-                    if ability and ability not in ability_syms:
-                        logging.debug('invalid ability: %s', ability)
-                        errors.append("invalid ability")
+                    # if ability and ability not in ability_syms:
+                    #     logging.debug('invalid ability: %s', ability)
+                    #     errors.append("invalid ability")
                     ability_index = record.int_or_none() # so hidden abils are properly inherited
                     nature_id = record.str()
                     nature_stats_id = record.str()
