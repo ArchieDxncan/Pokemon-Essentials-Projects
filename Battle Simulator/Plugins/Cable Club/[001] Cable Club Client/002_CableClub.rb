@@ -53,7 +53,7 @@ module CableClub
     setBattleRule("environment", :None)
     setBattleRule("weather", :None)
     setBattleRule("terrain", :None)
-    setBattleRule("backdrop", "indoor1")
+    setBattleRule("backdrop", "elite1")
     BattleCreationHelperMethods.prepare_battle(battle)
     $game_temp.clear_battle_rules
     battle.time = 0
