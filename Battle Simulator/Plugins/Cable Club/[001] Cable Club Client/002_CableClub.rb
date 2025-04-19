@@ -31,6 +31,14 @@ module CableClub
   def self.do_battle(connection, client_id, seed, battle_rules, player_party, partner, partner_party)
     $player.heal_party # Avoids having to transmit damaged state.
     partner_party.each{|pkmn| pkmn.heal} # back to back battles desync without it.
+    
+    # Extract actual rules if battle_rules is an array (compatibility with older code)
+    if battle_rules.is_a?(Array) && battle_rules.size >= 3
+      actual_rules = battle_rules[2] # Get the PokemonOnlineRules object from array
+    else
+      actual_rules = battle_rules
+    end
+    
     olditems  = player_party.transform { |p| p.item_id }
     olditems2 = partner_party.transform { |p| p.item_id }
     if !DISABLE_SKETCH_ONLINE
@@ -42,13 +50,23 @@ module CableClub
       old_tera = $player.tera_charged?
       $player.tera_charged = true
     end
+    
+    # Apply level adjustments if rules exist
+    if actual_rules
+      level_adjustments = actual_rules.adjustLevels(player_party, partner_party)
+    end
+    
     scene = BattleCreationHelperMethods.create_battle_scene
     battle = Battle_CableClub.new(connection, client_id, scene, player_party, partner_party, partner, seed)
     battle.items = []
     battle.internalBattle = false
-    battle_rules.applyBattleRules(battle)
+    
+    # Apply battle rules if they exist
+    actual_rules.applyBattleRules(battle) if actual_rules
+    
     trainerbgm = pbGetTrainerBattleBGM(partner)
     EventHandlers.trigger(:on_start_battle)
+    
     # XXX: Configuring Online Battle Rules
     setBattleRule("environment", :None)
     setBattleRule("weather", :None)
@@ -57,6 +75,7 @@ module CableClub
     BattleCreationHelperMethods.prepare_battle(battle)
     $game_temp.clear_battle_rules
     battle.time = 0
+    
     exc = nil
     outcome = 0
     pbBattleAnimation(trainerbgm, (battle.singleBattle?) ? 1 : 3, [partner]) {
@@ -67,10 +86,17 @@ module CableClub
           scene.pbEndBattle(0)
           exc = $!
         ensure
+          # Unapply level adjustments if they were applied
+          if actual_rules && level_adjustments
+            actual_rules.unadjustLevels(player_party, partner_party, level_adjustments)
+          end
+          
           if PluginManager.installed?("Terastal Phenomenon") ||
              PluginManager.installed?("[DBK] Terastallization")
             $player.tera_charged = old_tera
           end
+          
+          # Restore original states (existing code remains the same)
           player_party.each_with_index do |pkmn, i|
             pkmn.heal
             pkmn.makeUnmega
@@ -93,6 +119,7 @@ module CableClub
               pkmn.terastallized = false if pkmn&.tera?
             end
           end
+          
           partner_party.each_with_index do |pkmn, i|
             pkmn.heal
             pkmn.makeUnmega
@@ -121,9 +148,9 @@ module CableClub
     raise exc if exc
     case outcome
     when 1
-      $stats.online_battles_wins+=1
+      $stats.online_battles_wins += 1
     when 2
-      $stats.online_battles_lost+=1
+      $stats.online_battles_lost += 1
     end
   end
 

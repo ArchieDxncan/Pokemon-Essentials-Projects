@@ -681,27 +681,30 @@ class CableClubScreen
     end
   end
   
-  def do_battle(connection,team_order,partner_order)
+  def do_battle(connection, team_order, partner_order)
     partner = NPCTrainer.new(@partner_name, @partner_trainertype)
-    partner.win_text =  _INTL(CableClub::ONLINE_WIN_SPEECHES_LIST[@partner_win_text])
+    partner.win_text = _INTL(CableClub::ONLINE_WIN_SPEECHES_LIST[@partner_win_text])
     partner.lose_text = _INTL(CableClub::ONLINE_LOSE_SPEECHES_LIST[@partner_lose_text])
-    seed,battle_rules = @battle_settings
+    
+    # Extract the rules from the array (third element)
+    seed, battle_rule_data, battle_origin = @battle_settings
+    battle_rules = battle_rule_data[2] # Get the PokemonOnlineRules object
+    
     party_player = $player.party
     if team_order
-      party_player=[]
-      team_order.each do |i|
-        party_player.push($player.party[i])
-      end
+      party_player = []
+      team_order.each { |i| party_player.push($player.party[i]) }
     end
+    
     party_partner = @partner_party
     if partner_order
-      party_partner=[]
-      partner_order.each do |i|
-        party_partner.push(@partner_party[i])
-      end
+      party_partner = []
+      partner_order.each { |i| party_partner.push(@partner_party[i]) }
     end
-    decision = CableClub::do_battle(connection, @client_id, seed, battle_rules[2], party_player, partner, party_partner)
+  
+    decision = CableClub::do_battle(connection, @client_id, seed, battle_rules, party_player, partner, party_partner)
     @battle_settings = nil
+    
     if @client_id == 0
       choose_activity(connection)
     else

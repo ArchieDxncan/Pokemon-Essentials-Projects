@@ -72,17 +72,13 @@ class PokemonOnlineRules
   end
   
   def adjustLevels(party1,party2)
-    if @levelAdjustment && @levelAdjustment.type==LevelAdjustment::BothTeams
-      return @levelAdjustment.adjustLevels(party1,party2)
-    else
-      return nil
-    end
+    return @levelAdjustment.adjustLevels(party1,party2) if @levelAdjustment
+    return nil
   end
 
-  def unadjustLevels(party1,party2,adjusts)
-    if @levelAdjustment && adjusts && @levelAdjustment.type==LevelAdjustment::BothTeams
-      @levelAdjustment.unadjustLevels(party1,party2,adjusts)
-    end
+  def unadjustLevels(party1, party2, adjusts)
+    return @levelAdjustment.unadjustLevels(party1, party2, adjusts) if @levelAdjustment
+    return nil
   end
 
   def addPokemonRule(rule, *args)

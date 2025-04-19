@@ -7,9 +7,9 @@ class Battle
 end
 
 class Battle_CableClub < Battle
-  attr_reader :connection
-  attr_reader :battleRNG
-  def initialize(connection, client_id, scene, player_party, opponent_party, opponent, seed)
+  attr_reader :connection, :client_id, :battleRNG  # Explicitly expose these
+
+  def initialize(connection, client_id, scene, player_party, opponent_party, opponent, seed, battle_rules = nil)
     @connection = connection
     @client_id = client_id
     online_back_check = GameData::TrainerType.player_back_sprite_filename($player.online_trainer_type)
@@ -18,8 +18,19 @@ class Battle_CableClub < Battle
     else
       player = NPCTrainer.new($player.name, $player.trainertype)
     end
+    
+    # Apply level adjustments if rules exist
+    if battle_rules
+      level_adjustments = battle_rules.adjustLevels(player_party, opponent_party)
+    end
+    
     super(scene, player_party, opponent_party, [player], [opponent])
-    @battleAI  = AI_CableClub.new(self)
+    
+    # Store adjustments to unapply later if needed
+    @level_adjustments = level_adjustments
+    @battle_rules = battle_rules
+    
+    @battleAI = AI_CableClub.new(self)
     @battleRNG = Random.new(seed)
   end
   
@@ -138,9 +149,7 @@ class Battle_CableClub < Battle
       pbOnBattlerEnteringBattle(switched)
     end
   end
-end
 
-class Battle
   class AI_CableClub < AI
     def pbDefaultChooseEnemyCommand(index)
       # Hurray for default methods. have to reverse it to show the expected order.
